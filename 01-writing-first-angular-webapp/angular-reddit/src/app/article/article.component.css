@@ -1,0 +1,10 @@
+.list-group-item {
+    border: none;
+}
+a {
+    text-decoration: none;;
+}
+.rate {
+    background-color: rgb(196, 196, 196);
+    border-radius: 5px;
+}

@@ -1,0 +1,25 @@
+<form action="">
+  <div class="mb-3 w-75 mx-auto my-5 p-3 success custom">
+    <h3>Add a link</h3>
+    <div class="form-floating mx-2 my-2">
+      <input type="" class="form-control" id="title" placeholder="Title" #newtitle>
+      <label for="title">Title</label>
+    </div>
+    
+    <div class="form-floating mx-2 my-2">
+      <input type="" class="form-control" id="link" placeholder="Link" #newlink>
+      <label for="link">Link</label>
+    </div>
+  
+    <div class="d-grid justify-content-md-end">
+      <button type="button" class="btn btn-outline-success me-md-2" (click)="addArticle(newtitle, newlink)">Submit link</button>
+    </div>
+  </div>
+</form>
+
+<div class="">
+  <app-article 
+    *ngFor="let foobar of sortedArticles()" 
+    [article]="foobar">
+  </app-article>
+</div>
