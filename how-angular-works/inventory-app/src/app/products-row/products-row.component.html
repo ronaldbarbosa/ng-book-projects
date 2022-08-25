@@ -1,0 +1,21 @@
+<div class="container w-75 my-5">
+    <div class="row">
+        <div class="col">
+            <product-image [product]="product"></product-image>
+        </div>
+
+        <div class="col-6">
+            <div class="header"> {{product.name}} </div>
+            <div class="meta">
+                <div class="product-sku">SKU # {{product.sku}} </div>
+            </div>
+            <div class="description">
+                <product-departament [product]="product"></product-departament>
+            </div>
+        </div>
+
+        <div class="col">
+            <price-display [price]="product.price"></price-display>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<app-header></app-header>
+
+<div class="inventory-app">
+    <products-list
+        [productList] = 'products' 
+        (onProductSelected) = 'productWasSelected($event)'>
+    </products-list>
+</div>
+<!-- É passado products (app-component.ts, componente pai) como input para a variável productList(products-list.component.ts, componente filho) -->

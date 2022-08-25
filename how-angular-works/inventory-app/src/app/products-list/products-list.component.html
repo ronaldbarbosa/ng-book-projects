@@ -1,0 +1,11 @@
+
+<products-row
+    *ngFor="let myProduct of productList"
+    [product]="myProduct"
+    (click)="clicked(myProduct)"
+    [class.text-success]="isSelected(myProduct)"
+    >
+</products-row>
+
+
+<!-- [class.text-success]="isSelected(myProduct) essa linha adiciona a classe 'text-success' ao produto se a função isSelected retornar true -->
